@@ -5,6 +5,8 @@ import FeedbackOptions from "./components/FeedbackOptions/FeedbackOptions";
 import Section from "./components/Section/Section";
 import Notification from "./components/Notification/Notification";
 
+import s from "./components/App.module.css";
+
 // ============================
 
 class App extends Component {
@@ -30,8 +32,8 @@ class App extends Component {
   render() {
     const { good, neutral, bad } = this.state;
     return (
-      <div>
-        <Section title="Please leave feadback">
+      <div className={s.Feedback__container}>
+        <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
             onLeaveFeedback={this.clickHandler}

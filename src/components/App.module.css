@@ -1,0 +1,17 @@
+body {
+    background-color: #f6f6f7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Feedback__container {
+    width: 350px;
+    display: block;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
